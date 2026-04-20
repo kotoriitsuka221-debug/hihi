@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    @apply bg-zinc-50 text-zinc-900;
+  }
+  
+  /* Custom Scrollbar - matching Zinc theme */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-300;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-emerald-600;
+  }
+}
+
+@layer components {
+  .animate-in {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+  }
+}
+
+
+
